@@ -1,0 +1,2 @@
+# Ignorar gemas instaladas localmente por Bundler
+vendor/bundle/
