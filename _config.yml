@@ -1,0 +1,43 @@
+# B:/somosdeportes/_config.yml
+title: Somos Deportes # Título de tu sitio
+email: viloria.egli@yahoo.com
+description: >- # Esto aparecerá en meta tags, etc.
+  Tu fuente de noticias y análisis deportivos. Cubrimos fútbol,
+  básquetbol, béisbol y mucho más. Introducimos temas de Sports Management
+baseurl: "" # Dejar vacío si el sitio está en la raíz del dominio (ej. misitio.com)
+            # Si es misitio.com/blog, sería "/blog"
+url: "http://127.0.0.1:4000" # La URL final de tu sitio Netlify
+
+# Build settings
+markdown: kramdown # Motor de Markdown (puedes seguir usando HTML puro)
+permalink: pretty # Para URLs amigables (ej. /basquetbol/ en lugar de /basquetbol.html)
+
+Configuration file: none
+
+# Excluir archivos/carpetas del build de Jekyll
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE
+
+# Plugins (si los añades al Gemfile y los quieres activar)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag 
+
+#   - jekyll-sitemap
+
+# Netlify CMS: especifica la ruta al directorio de subida de imágenes
+# Esto es útil si quieres que Jekyll procese las imágenes de alguna forma,
+# o simplemente para tener una referencia
+defaults:
+  - scope:
+      path: "imagenes"
+    values:
+      image: true

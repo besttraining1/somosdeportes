@@ -1,47 +1,31 @@
-<!DOCTYPE html>
-<html lang="es">
+---
+# B:/somosdeportes/index.html
+# Front Matter: Metadatos para Jekyll
 
-<style>
-  h1 {
-    font-size: 36px;
-    color: rgb(227, 225, 233);
-  }
-</style>
+layout: default # Especifica qué archivo de _layouts/ usar (ej. default.html)
+title: Página Principal - SOMOSDEPORTE.COM # Título específico para esta página, se usará en <title> y posiblemente en el layout
 
-<head>
-  <meta charset="UTF-8">
-  <title>SOMOSDEPORTE.COM</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>SOMOSDEPORTE.COM</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Pagina Principal</a></li>
-        <li><a href="futbol.html">Fútbol</a></li>
-        <li><a href="beisbol.html">Béisbol</a></li>
-        <li><a href="basquetbol.html">Basquetbol</a></li>
-        <li><a href="soccer.html">MLS</a></li>
-        <li><a href="futbolamericano.html">NFL</a></li>
-        <li><a href="otrosdeportes.html">Otros Deportes</a></li>
-        <li><a href="opinion.html">Opinión</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+# Puedes añadir otras variables personalizadas aquí si las necesitas para tu plantilla
+# Por ejemplo:
+# description: "Bienvenido a SomosDeporte.com, tu fuente de noticias deportivas."
+# keywords: "deportes, futbol, beisbol, basquetbol, nfl, mls"
+---
 
-  <main>
-    <h2>Bienvenido a SOMOSDEPORTE.COM</h2>
 
-    <img src="imagenes/somos deporte.png" alt="Final Libertadores entre River y Flamengo" style="width:80%; margin: 1rem 0;">
+<!-- Contenido específico de la página de inicio -->
+<h2>Bienvenido a SOMOSDEPORTE.COM, tu fuente de noticias deportivas</h2>
 
-    <p>Notas, análisis y emoción sobre tus deportes favoritos. ....(pagina en construccion)</p>
-  </main>
+<!--
+  Para las imágenes, es una buena práctica usar el filtro `relative_url` de Jekyll.
+  Esto asegura que el enlace funcione correctamente sin importar si tu sitio
+  está en la raíz del dominio o en una subcarpeta (si configuras `baseurl` en _config.yml).
+  También, añade siempre un atributo `alt` por accesibilidad.
+  La carpeta 'imagenes' debe estar en la raíz de tu proyecto Jekyll para que
+  sea copiada a la carpeta _site durante la compilación.
+-->
+<img src="{{ '/imagenes/somosdeporte.png' | relative_url }}" alt="Logo de Somos Deporte" style="width:80%; margin: 1rem 0;">
 
-  <footer>
-    <p>&copy; 2025 SOMOSDEPORTE.COM Hoy, '........pagina en construccion........'</p>
-  </footer>
-</body>
-</html>
+<p>Notas, análisis y emoción sobre tus deportes favoritos. ....(pagina en construccion)</p>
 
+<!-- Aquí iría el resto del contenido que es ÚNICO para tu página de inicio -->
+<!-- Por ejemplo, secciones de noticias destacadas, etc. -->

@@ -1,43 +1,36 @@
-<!DOCTYPE html>
-<html lang="es">
+---
+# B:/somosdeportes/contacto.html
 
-<style>
-  h1 {
-    font-size: 36px;
-    color: rgb(227, 225, 233);
-  }
-</style>
+# Front Matter: Metadatos para Jekyll
+layout: default # Especifica que usará _layouts/default.html
+title: Quienes Somos ? - SOMOSDEPORTE.COM # Título específico para la página de Basquetbol
+# Opcional: puedes añadir una descripción para SEO si tu layout o plugin SEO lo usa
 
-<head>
-  <meta charset="UTF-8">
-  <title>SOMOSDEPORTE.COM</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>SOMOSDEPORTE.COM</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Pagina Principal</a></li>
-        <li><a href="futbol.html">Fútbol</a></li>
-        <li><a href="beisbol.html">Béisbol</a></li>
-        <li><a href="basquetbol.html">Basquetbol</a></li>
-        <li><a href="soccer.html">MLS</a></li>
-        <li><a href="futbolamericano.html">NFL</a></li>
-        <li><a href="otrosdeportes.html">Otros Deportes</a></li>
-        <li><a href="opinion.html">Opinión</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+---
 
-  <main>
-    <h2>Contacto</h2>
-    <p>Aquí aparecerán tus Contactos para que los usuarios interactuen contigo</p>
-  </main>
+<!--
+El contenido HTML que sigue es el específico de la página de contacto
+Jekyll lo insertará en la plantilla '_layouts/default.html' (o la que se especifique en 'layout')
+donde encuentre la etiqueta {{ content }}.
+-->
 
-  <footer>
-    <p>&copy; 2025 SOMOSDEPORTE.COM Hoy, '.........pagina en construccion......'</p>
-  </footer>
-</body>
-</html>
+<h2>Quienes formamos parte del Equipo y como contactarnos</h2>
+
+<div class="noticias-container">
+  
+  <div class="noticia">
+    <h3>Arnold Javier Ortiz: "Disfruto estudiando y escribiendo sobre deportes"</h3>
+    <img src="{{ '/imagenes/LM.png' | relative_url }}" alt="arnold javier ortiz" style="width:50%; margin: 1rem 0;">
+    <p> — Hablo y escribo sobre Futbol, Beisbol, Baloncesto. El Sports Management es mi especialidad</p>
+  </div>
+
+  <div class="noticia">
+    <h3>Yeilimar Viloria</h3>
+    <img src="{{ '/imagenes/soccer.png' | relative_url }}" alt="yeilimar viloria" style="width:50%; margin: 1rem 0;">
+    <p> — El deporte es mi pasion. Soy comunicadora social, dedicado por muchos años al area deportiva.</p>
+  </div>
+
+  
+  <!-- Aquí iría el resto del contenido que es ÚNICO para tu página de contacto, destacando email, redes sociales -->
+
+</div>

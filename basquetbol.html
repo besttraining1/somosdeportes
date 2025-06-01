@@ -1,45 +1,37 @@
-<!DOCTYPE html>
-<html lang="es">
+---
+# B:/somosdeportes/basquetbol.html
+# Front Matter: Metadatos para Jekyll
 
-<style>
-  h1 {
-    font-size: 36px;
-    color: rgb(227, 225, 233);
-  }
-</style>
+layout: default # Especifica que usará _layouts/default.html
+title: Noticias de Baloncesto - SOMOSDEPORTE.COM # Título específico para la página de Basquetbol
 
-<head>
-  <meta charset="UTF-8">
-  <title>SOMOSDEPORTE.COM</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>SOMOSDEPORTE.COM</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Pagina Principal</a></li>
-        <li><a href="futbol.html">Fútbol</a></li>
-        <li><a href="beisbol.html">Béisbol</a></li>
-        <li><a href="basquetbol.html">Basquetbol</a></li>
-        <li><a href="soccer.html">MLS</a></li>
-        <li><a href="futbolamericano.html">NFL</a></li>
-        <li><a href="otrosdeportes.html">Otros Deportes</a></li>
-        <li><a href="opinion.html">Opinión</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+# Opcional: puedes añadir una descripción para SEO si tu layout o plugin SEO lo usa
 
-  <main>
-    <h2>Noticias sobre Basquetbol</h2>
-    <img src="imagenes/NBA.png" alt="Cuadro NBA" style="width:50%; margin: 1rem 0;">
-    <p>Aquí aparecerán tus notas sobre el Basquetbol</p>
-    <img src="imagenes/NBA2.png" alt="Estrellas NBA" style="width:50%; margin: 1rem 0;">
-  </main>
+---
 
-  <footer>
-    <p>&copy; 2025 SOMOSDEPORTE.COM Hoy, '.........pagina en construccion......'</p>
-  </footer>
-</body>
-</html>
+<!--
+El contenido HTML que sigue es el específico de la página de Basquetbol
+Jekyll lo insertará en la plantilla '_layouts/default.html' (o la que se especifique en 'layout')
+donde encuentre la etiqueta {{ content }}.
+-->
+
+
+<h2>Noticias, análisis y resultados del mundo del Basquetbol</h2>
+
+<div class="noticias-container">
+  
+  <div class="noticia">
+    <h3>Equipos clasificados</h3>
+    <img src="{{ '/imagenes/NBA.png' | relative_url }}" alt="Final de division conferencias NBA" style="width:50%; margin: 1rem 0;">
+    <p><strong>May, 11 2025</strong> — Asi quedo el cuadro clasificatorio para las finales de las conferencia el este y oeste en la NBA.</p>
+  </div>
+
+  <div class="noticia">
+    <h3>Juego de las estrellas de la NBA</h3>
+    <img src="{{ '/imagenes/NBA2.png' | relative_url }}" alt="Juego de las estrellas de la NBA 2025" style="width:50%; margin: 1rem 0;">
+    <p><strong>May, 11 2025</strong> — Con la participacion de las maximas estrella de la NBA, se realizara el XLVI juego de las estrellas del mejor balencesto del mundo.</p>
+  </div>
+
+  <!-- Aquí iría el resto del contenido que es ÚNICO para tu página de basquetbol -->
+
+</div>

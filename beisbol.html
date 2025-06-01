@@ -1,45 +1,35 @@
-<!DOCTYPE html>
-<html lang="es">
+---
+# B:/somosdeportes/beisbol.html
 
-<style>
-  h1 {
-    font-size: 36px;
-    color: rgb(227, 225, 233);
-  }
-</style>
+# Front Matter: Metadatos para Jekyll
+layout: default # Especifica que usará _layouts/default.html
+title: Noticias de Beisbol - SOMOSDEPORTE.COM # Título específico para la página de Basquetbol
+# Opcional: puedes añadir una descripción para SEO si tu layout o plugin SEO lo usa
 
-<head>
-  <meta charset="UTF-8">
-  <title>SOMOSDEPORTE.COM</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>SOMOSDEPORTE.COM</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Pagina Principal</a></li>
-        <li><a href="futbol.html">Fútbol</a></li>
-        <li><a href="beisbol.html">Béisbol</a></li>
-        <li><a href="basquetbol.html">Basquetbol</a></li>
-        <li><a href="soccer.html">MLS</a></li>
-        <li><a href="futbolamericano.html">NFL</a></li>
-        <li><a href="otrosdeportes.html">Otros Deportes</a></li>
-        <li><a href="opinion.html">Opinión</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+---
 
-  <main>
-    <h2>Noticias de Beisbol</h2>
-    <h3>Posicion de los Equipos en las diferentes divisiones Liga Nacional y Liga Americana de la MLB"</h3>
-    <img src="imagenes/MLB.png" alt="MLB" style="width:50%; margin: 1rem 0;">
-    <p>Aquí aparecerán tus notas y coberturas beibolísticas.</p>
-  </main>
+<!--
+El contenido HTML que sigue es el específico de la página de Beisbol
+Jekyll lo insertará en la plantilla '_layouts/default.html' (o la que se especifique en 'layout')
+donde encuentre la etiqueta {{ content }}.
+-->
 
-  <footer>
-    <p>&copy; 2025 SOMOSDEPORTE.COM Hoy, '.........pagina en construccion......'</p>
-  </footer>
-</body>
-</html>
+<h2>Noticias, análisis y resultados del mundo del Beisbol</h2>
+
+<div class="noticias-container">
+  
+  <div class="noticia">
+    <h3>Equipos clasificados</h3>
+    <img src="{{ '/imagenes/MLB.png' | relative_url }}" alt="Final de division conferencias NBA" style="width:50%; margin: 1rem 0;">
+    <p><strong>May, 11 2025</strong> — Asi van los diferentes equipos de la MLB, con unos Mets de NY escapados en la punta con unos de sus mejores comienzos en los ultimos años.</p>
+  </div>
+
+  <div class="noticia">
+    <h3>Juego de las estrellas de la NBA</h3>
+    <img src="{{ '/imagenes/RAjr.png' | relative_url }}" alt="Juego de las estrellas de la NBA 2025" style="width:50%; margin: 1rem 0;">
+    <p><strong>May, 11 2025</strong> — Con un Homerun con el primer lanzamiento, Ronanld Acuña Jr.reaparecio despues de casi un año de inactividad debido a una grave lesion en una de sus rodillas.</p>
+  </div>
+
+  <!-- Aquí iría el resto del contenido que es ÚNICO para tu página de beisbol -->
+
+</div>

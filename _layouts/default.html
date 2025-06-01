@@ -1,0 +1,40 @@
+<!-- B:/somosdeportes/_layouts/default.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Usa el título de la página si está definido, sino el título del sitio de _config.yml -->
+    <title>{{ page.title | escape | default: site.title | escape }}</title>
+
+    <!-- Enlaza tu CSS. El filtro relative_url es importante. -->
+    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+    <!-- Aquí podrías añadir {{ site.description }} si lo defines en _config.yml -->
+    <!-- También podrías usar plugins como jekyll-seo-tag para manejar metas automáticamente -->
+    {% feed_meta %} <!-- Para el feed RSS si usas jekyll-feed -->
+    {% seo %} <!-- Si usas jekyll-seo-tag -->
+</head>
+<body>
+    <header>
+        <!-- Asume que site.title está definido en _config.yml -->
+        <h1><a href="{{ "/" | relative_url }}">{{ site.title | default: "SOMOSDEPORTE.COM" }}</a></h1>
+        <!-- Incluir la navegación -->
+        {% include navigation.html %}
+    </header>
+
+    <main>
+        {{ content }} <!-- Aquí es donde Jekyll insertará el contenido de index.html (o cualquier otra página) -->
+    </main>
+
+    <footer>
+        <!-- El año se puede generar dinámicamente -->
+        <p>© {{ "now" | date: "%Y" }} {{ site.title | default: "SOMOSDEPORTE.COM" }}. '...pagina en construccion.....Todos los derechos reservados.'</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+ 
+

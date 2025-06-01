@@ -1,65 +1,55 @@
-<!DOCTYPE html>
-<html lang="es">
+---
+# B:/somosdeportes/futbol.html
+# Front Matter: Metadatos para Jekyll
 
-<style>
-  h1 {
-    font-size: 36px;
-    color: rgb(227, 225, 233);
-  }
-</style>
+layout: default # Especifica que usará _layouts/default.html
+title: Noticias de Fútbol - SOMOSDEPORTE.COM # Título específico para la página de Fútbol
 
-<head>
-  <meta charset="UTF-8">
-  <title>SOMOSDEPORTE.COM</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>SOMOSDEPORTE.COM</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Pagina Principal</a></li>
-        <li><a href="futbol.html">Fútbol</a></li>
-        <li><a href="beisbol.html">Béisbol</a></li>
-        <li><a href="basquetbol.html">Basquetbol</a></li>
-        <li><a href="soccer.html">MLS</a></li>
-        <li><a href="futbolamericano.html">NFL</a></li>
-        <li><a href="otrosdeportes.html">Otros Deportes</a></li>
-        <li><a href="opinion.html">Opinión</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+---
 
-  <main>
-    <h2>Noticias de Fútbol</h2>
+<!--
+El contenido HTML que sigue es el específico de la página de Fútbol.
+Jekyll lo insertará en la plantilla '_layouts/default.html' (o la que se especifique en 'layout')
+donde encuentre la etiqueta {{ content }}.
+-->
 
-    <div class="noticias-container">
-      
-      <div class="noticia">
-        <h3>LaLiga: Real Madrid otra vez al final del partido</h3>
-        
-        <p><strong>May, 14 2025</strong> — Con una gran actuación del portero del Mayorca, Mbappé anota su gol número 40 de la temporada, Jacobo Ramón marcó un dramático gol en el quinto minuto del tiempo añadido y el Real Madrid remonta para ganar 2x1 este miercoles al RCD Mallorca, para mantener vivas las escasas esperanzas de alcanzar al Lider del campeonato, el Barcelona FC. Aunque el Madrid se encuentra a cuatro puntos del Barcelona, este tiene un partido menos y podria conseguir el título de Campeon de LaLiga Española, si vence a su rival, el Espanyol el Jueves en el Montjuic.</p>
-      
-        <video src="imagenes/Madrid 2-1 Mallorca _ LaLiga 2024-25.mp4" autoplay controls style="width:60%; margin: 1rem 0;"></video>
-      </div>
+<!-- Contenido específico de la página de Fútbol -->
+<h2>Noticias de Fútbol</h2>
 
-      <div class="noticia">
-        
-      </div>
+<div class="noticias-container">
+  
+  <div class="noticia">
+    <h3>LaLiga: Real Madrid otra vez al final del partido</h3>
+    
+    <p><strong>May, 14 2025</strong> — Con una gran actuación del portero del Mayorca, Mbappé anota su gol número 40 de la temporada, Jacobo Ramón marcó un dramático gol en el quinto minuto del tiempo añadido y el Real Madrid remonta para ganar 2x1 este miercoles al RCD Mallorca, para mantener vivas las escasas esperanzas de alcanzar al Lider del campeonato, el Barcelona FC. Aunque el Madrid se encuentra a cuatro puntos del Barcelona, este tiene un partido menos y podria conseguir el título de Campeon de LaLiga Española, si vence a su rival, el Espanyol el Jueves en el Montjuic.</p>
+  
+    <!--
+      Para el video, usamos relative_url para la ruta.
+      El atributo 'autoplay' puede ser disruptivo para los usuarios; considera si es realmente necesario.
+      Los controles están bien. El estilo inline es funcional, pero para un diseño más limpio
+      a largo plazo, podrías definir clases en style.css (ej. .responsive-video).
+    -->
+    <video src="{{ '/imagenes/Madrid_Mallorca_24_25.mp4' | relative_url }}" autoplay controls style="width:60%; margin: 1rem 0;"></video>
+  </div>
 
-      <div class="noticia">
-        <h3>Final de infarto: River se queda con superclásico</h3>
-        <img src="imagenes/final libert 2019.png" alt="Final Libertadores entre River y Flamengo" style="width:50%; margin: 1rem 0;">
-        <p><strong>May, 11 2025</strong> — River Plate venció 2-1 a Boca Juniors en un Monumental repleto, con goles de Colidio y Echeverri. El Xeneize descontó sobre el final con un tanto de Cavani, pero no alcanzó.</p>
-      </div>
-    </div>
-  </main>
+  <div class="noticia">
+    <!-- Este div estaba vacío en tu original. Si es un placeholder, puedes dejarlo. -->
+    <!-- Si no tiene propósito, puedes eliminarlo. -->
+  </div>
 
-  <footer>
-    <p>&copy; 2025 SOMOSDEPORTE.COM Hoy, '.........pagina en construccion......'</p>
-  </footer>
-</body>
-</html>
+  <div class="noticia">
+    <h3>Final de infarto: River se queda con superclásico</h3>
+    <!--
+      Para la imagen, usamos relative_url para la ruta.
+      El atributo 'alt' es importante para la accesibilidad.
+      El estilo inline es funcional, pero considera clases CSS para consistencia.
+    -->
+    <img src="{{ '/imagenes/final_libert_2019.png' | relative_url }}" alt="Final Libertadores 2019 entre River Plate y Flamengo en el Monumental" style="width:50%; margin: 1rem 0;">
+    <p><strong>May, 11 2025</strong> — River Plate venció 2-1 a Boca Juniors en un Monumental repleto, con goles de Colidio y Echeverri. El Xeneize descontó sobre el final con un tanto de Cavani, pero no alcanzó.</p>
+  </div>
+
+  <!-- Aquí iría el resto del contenido que es ÚNICO para tu página de fútbol -->
+</div>
+
 
 
