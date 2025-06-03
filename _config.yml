@@ -12,7 +12,7 @@ url: "http://127.0.0.1:4000" # La URL final de tu sitio Netlify
 markdown: kramdown # Motor de Markdown (puedes seguir usando HTML puro)
 permalink: pretty # Para URLs amigables (ej. /basquetbol/ en lugar de /basquetbol.html)
 
-Configuration file: none
+# Configuration file: none
 
 # Excluir archivos/carpetas del build de Jekyll
 exclude:
@@ -25,11 +25,13 @@ exclude:
   - vendor/ruby/
   - README.md
   - LICENSE
+  - .bundle/
 
 # Plugins (si los añades al Gemfile y los quieres activar)
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag 
+  - jekyll-seo-tag
+  - wdm
 
 #   - jekyll-sitemap
 

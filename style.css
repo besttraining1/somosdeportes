@@ -70,3 +70,36 @@ footer {
 }
 
 /* --- END OF FILE style.css --- */
+
+
+/* styles.css */
+
+.noticias-container {
+  display: grid; /* Activa CSS Grid en el contenedor */
+  /* Define dos columnas de igual fracción del espacio disponible (1fr) */
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; /* Espacio entre las filas y columnas de la cuadrícula */
+}
+
+.noticia {
+  /* Estilos adicionales para cada noticia (bordes, padding, etc.) */
+  border: 1px solid #ddd;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+/* Estilos para las imágenes dentro de .noticia para que sean responsivas */
+.noticia img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Ajustes para pantallas más pequeñas (ej. menos de 768px) para que sea una sola columna */
+@media (max-width: 768px) {
+  .noticias-container {
+    grid-template-columns: 1fr; /* Cambia a una sola columna */
+  }
+}
