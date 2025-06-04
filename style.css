@@ -4,102 +4,109 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
-  color: #333; /* Color de texto por defecto para el contenido principal */
+  background: #f9f9f9; /* Fondo del body */
+  color: #333;       /* Color de texto principal */
+  line-height: 1.6;   /* Mejora la legibilidad del texto largo */
 }
 
 header {
-  background: #1e3a8a; /* Azul oscuro */
-  color: white; /* Color de texto por defecto para elementos dentro del header, como nav */
-  padding: 0.5rem 1rem; /* Un poco más de padding vertical y horizontal */
+  background: #1e3a8a; /* Fondo del header (Azul oscuro) */
+  color: white;       /* Color de texto para elementos dentro del header */
+  padding: 0.5rem 1rem;
   text-align: center;
 }
 
-/* Estilo específico para el H1 que está dentro del <header> */
-/* Este es el estilo que se movió desde el <style> inline de index.html */
 header h1 {
   font-size: 36px;
-  color: rgb(227, 225, 233); /* Color blanco hueso/gris muy claro para el título principal */
-  margin-top: 0.5rem; /* Espacio arriba del título */
-  margin-bottom: 0.5rem; /* Espacio debajo del título, antes de la navegación */
+  /* El color se hereda de 'header' o se especifica si es diferente */
+  /* color: rgb(227, 225, 233); Si quieres un color específico para el H1 */
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-/* Si el H1 es un enlace, asegurarse de que herede el color o se defina */
 header h1 a {
-  color: inherit; /* Hereda el color de header h1 (rgb(227, 225, 233)) */
-  text-decoration: none; /* Quita el subrayado si es un enlace */
+  color: rgb(227, 225, 233); /* Color específico para el enlace del título del sitio */
+  text-decoration: none;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 0; /* Quitar margen por defecto del ul para mejor control */
+  margin: 0;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* Para que los enlaces se ajusten en pantallas pequeñas */
-  gap: 1rem; /* Espacio entre los elementos de la lista (enlaces) */
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 nav a {
-  color: white; /* Los enlaces de navegación serán blancos */
+  color: white; /* Heredado del header, pero explícito por claridad */
   text-decoration: none;
   font-weight: bold;
-  padding: 0.25em 0.5em; /* Padding para hacerlos más clickeables */
-  display: inline-block; /* Permite padding */
+  padding: 0.25em 0.5em;
+  display: inline-block;
 }
 
 nav a:hover,
 nav a:focus {
-  text-decoration: underline; /* Subrayado al pasar el mouse o enfocar */
+  text-decoration: underline;
 }
 
 main {
   padding: 2rem;
-  text-align: center;
-  max-width: 960px; /* Opcional: limita el ancho del contenido para mejor legibilidad */
-  margin-left: auto; /* Centra el main si max-width está activo */
-  margin-right: auto; /* Centra el main si max-width está activo */
+  text-align: justify; /* Mantenido si es tu preferencia, considera 'left' */
+  max-width: 960px;   /* Aumentado un poco para acomodar dos columnas con más espacio */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
-  background: #c90303; /* Rojo */
-  color: white;
+  background: #c90303; /* Fondo del footer (Rojo) */
+  color: white;       /* Color de texto para el footer */
   text-align: center;
-  padding: 1rem; /* Padding consistente */
+  padding: 1rem;
   margin-top: 1.5rem;
 }
 
-/* --- END OF FILE style.css --- */
-
-
-/* styles.css */
-
+/* Contenedor para las noticias en columnas */
 .noticias-container {
-  display: grid; /* Activa CSS Grid en el contenedor */
-  /* Define dos columnas de igual fracción del espacio disponible (1fr) */
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 20px; /* Espacio entre las filas y columnas de la cuadrícula */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+  gap: 20px; /* Espacio entre las noticias */
 }
 
+/* Estilo para cada tarjeta de noticia individual */
 .noticia {
-  /* Estilos adicionales para cada noticia (bordes, padding, etc.) */
   border: 1px solid #ddd;
   padding: 15px;
-  box-sizing: border-box;
-  background-color: #fff;
+  box-sizing: border-box; /* Asegura que padding y borde no aumenten el tamaño total */
+  background-color: #fff;  /* Fondo blanco para las tarjetas */
+  /* Opcional: para mejor alineación vertical si el contenido varía mucho */
+  /* display: flex; */
+  /* flex-direction: column; */
 }
 
-/* Estilos para las imágenes dentro de .noticia para que sean responsivas */
+.noticia h3 {
+  margin-top: 0; /* Quita el margen superior del h3 para mejor alineación */
+}
+
+/* Estilos para las imágenes dentro de cada noticia */
 .noticia img {
-  max-width: 80%;
-  height: auto;
-  display: block;
-  margin-bottom: 10px;
+  max-width: 100%;  /* La imagen ocupará hasta el 100% del ancho de la tarjeta .noticia */
+  height: auto;     /* Mantiene la proporción de la imagen */
+  display: block;   /* Elimina espacio extra debajo y permite márgenes automáticos */
+  margin: 0 auto 15px auto; /* Centra la imagen y añade margen inferior */
+  /* Si preferías que la imagen no estuviera centrada y ocupara 80%: */
+  /* width: 80%; */
+  /* margin-bottom: 15px; */
 }
 
-/* Ajustes para pantallas más pequeñas (ej. menos de 768px) para que sea una sola columna */
+/* Diseño responsivo: una columna para pantallas más pequeñas */
 @media (max-width: 768px) {
   .noticias-container {
-    grid-template-columns: 1fr; /* Cambia a una sola columna */
+    grid-template-columns: 1fr; /* Una sola columna */
+  }
+  main {
+    padding: 1rem; /* Menos padding en pantallas pequeñas */
   }
 }
