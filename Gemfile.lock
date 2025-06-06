@@ -81,8 +81,8 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 4.4.1)
-  jekyll-feed
-  jekyll-seo-tag
+  jekyll-feed (~> 0.12)
+  jekyll-seo-tag (~> 2.6)
   logger
   wdm (>= 0.1.0)
 
