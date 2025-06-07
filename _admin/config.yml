@@ -1,0 +1,72 @@
+# Backend: Cómo se conecta Netlify CMS a tu repositorio
+backend:
+  name: git-gateway # Se conecta a través de Netlify Identity y Git Gateway
+  branch: main # o master, la rama principal de tu repositorio
+
+# Media: Dónde se guardarán las imágenes que subas a través del CMS
+media_folder: "imagenes" # Ruta relativa a la raíz del proyecto
+public_folder: "/imagenes" # Ruta pública desde donde se sirven las imágenes
+
+# Collections: Aquí defines tu contenido editable
+collections:
+  - name: "paginas" # Identificador de la colección
+    label: "Páginas" # Nombre que se muestra en la UI del CMS
+    # "files" es para una colección de archivos únicos, perfecto para tus páginas.
+    files:
+      - label: "Página principal"
+        name: "index"
+        file: "index.html"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Descripción", name: "description", widget: "string" }
+      - label: "Fútbol"
+        name: "futbol"
+        file: "futbol.html"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Descripción", name: "description", widget: "string" }
+      - label: "Básquetbol"
+        name: "basquetbol"
+        file: "basquetbol.html"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Descripción", name: "description", widget: "string" }
+      - label: "MLS"
+        name: "soccer"
+        file: "soccer.html"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Descripción", name: "description", widget: "string" }
+      - label: "Béisbol"
+        name: "beisbol"
+        file: "beisbol.html"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Descripción", name: "description", widget: "string" }
+      - label: "NFL"
+        name: "futbolamericano"
+        file: "futbolamericano.html"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Descripción", name: "description", widget: "string" }
+      - label: "Otros Deportes"
+        name: "otrosdeportes"
+        file: "otrosdeportes.html"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Descripción", name: "description", widget: "string" }
+      - label: "Opinión"
+        name: "opinion"
+        file: "opinion.html"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Descripción", name: "description", widget: "string" }
+      - label: "Contacto"
+        name: "contacto"
+        file: "contacto.html"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Descripción", name: "description", widget: "string" }
+     
+
+      # ... Añade una entrada para cada una de tus páginas (beisbol.html, contacto.html, etc.)
