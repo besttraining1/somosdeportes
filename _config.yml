@@ -14,8 +14,6 @@ permalink: pretty # Para URLs amigables (ej. /basquetbol/ en lugar de /basquetbo
 
 # Configuration file: none
 
-include:
-  - "_admin"
 
 # Excluir archivos/carpetas del build de Jekyll
 exclude:
