@@ -1,6 +1,7 @@
 # Backend: Cómo se conecta Netlify CMS a tu repositorio
 backend:
-  name: git-gateway # Se conecta a través de Netlify Identity y Git Gateway
+  name: github
+  repositorio: besttraining1/somoseportes
   branch: main # o master, la rama principal de tu repositorio
 
 site_url: https://somosdeportes.netlify.app
