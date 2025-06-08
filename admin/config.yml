@@ -1,7 +1,7 @@
 # Backend: Cómo se conecta Netlify CMS a tu repositorio
 backend:
   name: github
-  repositorio: besttraining1/somoseportes
+  repositorio: besttraining/somosdeportes
   branch: main # o master, la rama principal de tu repositorio
 
 site_url: https://somosdeportes.netlify.app
