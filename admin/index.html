@@ -1,15 +1,19 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf--8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Administrador de Contenido</title>
+  <!-- 1. Carga el script del pintor (Netlify CMS) -->
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
 </head>
 <body>
-  <!-- Initialize Netlify CMS -->
+  <!-- 2. Este es el lienzo que faltaba. El CMS se montará aquí. -->
   <div id="nc-root"></div>
+
+  <!-- 3. Este script ahora se ejecuta DESPUÉS de que el CMS se haya cargado y tenga su lienzo. -->
   <script>
+    // Inicializa el objeto CMS que ahora SÍ existe.
     CMS.init();
   </script>
 </body>
