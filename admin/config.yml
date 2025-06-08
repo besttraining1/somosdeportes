@@ -4,7 +4,7 @@ backend:
   repo: besttraining/somosdeportes
   branch: main # o master, la rama principal de tu repositorio
 
-site_url: https://somosdeportes.netlify.app
+# site_url: https://somosdeportes.netlify.app
 
 # Media: Dónde se guardarán las imágenes que subas a través del CMS
 media_folder: "imagenes" # Ruta relativa a la raíz del proyecto
