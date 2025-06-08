@@ -6,18 +6,16 @@
   <title>Administrador de Contenido</title>
 </head>
 <body>
-  <!-- El lienzo se define primero -->
   <div id="nc-root"></div>
 
-  <!-- Ahora, al final del body, cargamos los scripts -->
+  <!-- ESTA ES LA LÍNEA MODIFICADA Y MEJORADA -->
+  <script 
+    src="https://unpkg.com/netlify-cms-app@^2.12.0/dist/netlify-cms-app.js" 
+    crossorigin="anonymous" 
+    integrity="sha384-y5P2WFWFGzhaS2Kx1L/I0gPtyiLNLjQyB7p9g7/w09sIAmC/XKNqjXQpffzVCSiJ">
+  </script>
 
-  <!-- 1. Carga el script de Netlify CMS -->
-  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-  
-  <!-- 2. Nuestro script de inicialización con una salvaguarda -->
   <script>
-    // Le decimos al navegador: "Espera a que toda la estructura HTML de la página
-    // esté completamente cargada y lista antes de ejecutar el código que está adentro".
     window.addEventListener('DOMContentLoaded', (event) => {
       CMS.init();
     });
