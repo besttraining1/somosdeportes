@@ -1,10 +1,34 @@
 ---
-# B:/somosdeportes/opinion.html
-# Front Matter: Metadatos para Jekyll
-
-layout: default # Especifica que usará _layouts/default.html
+layout: default
 title: Analisis y opinion - SOMOSDEPORTE.COM
-
+description: Informacion relevante sobre la Industria del Deporte (Analisis y Opinion)
 ---
+<h2>Análisis y Opinion sobre diversos aspectos del mundo Deportivo</h2>
 
-{{ page.body | markdownify }}
+<div class="noticias-container">
+  
+  <div class="noticia">
+    <h3>Topicos varios</h3>
+    <img src="{{ '/imagenes/tododeportes.png' | relative_url }}" alt="todo deportes">
+    <p><strong>May, 11 2025</strong> — Analizamos diferentes temas de interes .</p>
+  </div>
+
+  <div class="noticia">
+    <h3>¿Es justo el VAR en el fútbol?</h3>
+    <img src="{{ '/imagenes/VAR.png' | relative_url }}" alt="Uso VAR en futbol">
+    <p>El VAR llegó para quedarse, pero sigue generando polémicas. ¿Es justo que un fuera de juego milimétrico anule un gol espectacular? Analizamos los pros y contras de la tecnología en el deporte más pasional del mundo.</p>
+  </div>
+
+  <div class="noticia"> 
+    <h3>Recambio generacional en Selección Argentina de futbol</h3>
+    <img src="{{ '/imagenes/re_cam_sel_arg.png' | relative_url }}" alt="final de una generacion">
+    <p> — Con Messi y Di María cerca del retiro, nombres como Garnacho, Enzo Fernández y Julián Álvarez asoman como los nuevos líderes. ¿Está preparada la Albiceleste para una nueva era? </p>
+  </div>
+
+  <div class="noticia">
+    <h3>Fútbol femenino: el crecimiento que no se detiene</h3>
+    <img src="{{ '/imagenes/fut_fem.png' | relative_url }}" alt="Crecimiento futbol femenino">
+    <p> — En el año 1991 y tras varios “mundiales” extra-oficiales y torneos organizados por la UEFA, la FIFA decidió organizar el primer mundial de fútbol femenino, con sede en la República Popular China. El campeón de aquella primera edición fue Estados Unidos, pero esto es tan solo una anécdota, ya que el verdadero triunfo fue sin dudas que la mismísima FIFA haya reconocido como oficial al fútbol femenino. Desde este punto en adelante todos los pequeños hitos serían grandes conquistas para esta disciplina, que comenzaba a crecer a una escala sin precedentes. Las ligas femeninas suman público, sponsors y talento.</p>
+  </div>
+
+</div>
