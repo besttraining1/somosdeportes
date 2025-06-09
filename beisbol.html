@@ -1,10 +1,22 @@
 ---
-# B:/somosdeportes/beisbol.html
-# Front Matter: Metadatos para Jekyll
-
-layout: default # Especifica que usará _layouts/default.html
-title: Noticias de Beisbol - SOMOSDEPORTE.COM 
-
+layout: default
+title: Noticias de Beisbol - SOMOSDEPORTE.COM
+description: Informacion relevante sobre la Industria del Deporte (Beisbol)
 ---
+<h2>Noticias, análisis y resultados del mundo del Beisbol</h2>
 
-{{ page.body | markdownify }}
+<div class="noticias-container">
+  
+  <div class="noticia">
+    <h3>Equipos clasificados</h3>
+    <img src="{{ '/imagenes/MLB.png' | relative_url }}" alt="standing de equipos">
+    <p><strong>May, 11 2025</strong> — Asi van los diferentes equipos de la MLB, con unos Mets de NY escapados en la punta con unos de sus mejores comienzos en los ultimos años.</p>
+  </div>
+
+  <div class="noticia">
+    <h3>regreso esperado por los Bravos de Atlanta</h3>
+    <img src="{{ '/imagenes/RAjr.png' | relative_url }}" alt="regreso Ronald Acuña jr">
+    <p><strong>May, 11 2025</strong> — Con un Homerun con el primer lanzamiento, Ronanld Acuña Jr.reaparecio despues de casi un año de inactividad debido a una grave lesion en una de sus rodillas.</p>
+  </div>
+
+</div>
