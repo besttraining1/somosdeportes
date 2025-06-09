@@ -7,21 +7,5 @@ title: Página Principal - SOMOSDEPORTE.COM
 
 ---
 
+{{ page.body | markdownify }}
 
-<!-- Contenido específico de la página de inicio -->
-<h2>Bienvenido a SOMOSDEPORTE.COM, tu fuente de noticias deportivas</h2>
-
-<!--
-  Para las imágenes, es una buena práctica usar el filtro `relative_url` de Jekyll.
-  Esto asegura que el enlace funcione correctamente sin importar si tu sitio
-  está en la raíz del dominio o en una subcarpeta (si configuras `baseurl` en _config.yml).
-  También, añade siempre un atributo `alt` por accesibilidad.
-  La carpeta 'imagenes' debe estar en la raíz de tu proyecto Jekyll para que
-  sea copiada a la carpeta _site durante la compilación.
--->
-<img src="{{ '/imagenes/somosdeporte.png' | relative_url }}" alt="Logo de Somos Deporte">
-
-<p>Notas, análisis y emoción sobre tus deportes favoritos. ....(pagina en construccion)</p>
-
-<!-- Aquí iría el resto del contenido que es ÚNICO para tu página de inicio -->
-<!-- Por ejemplo, secciones de noticias destacadas, etc. -->

@@ -22,54 +22,63 @@ collections:
         fields:
           - { label: "Título", name: "title", widget: "string" }
           - { label: "Descripción", name: "description", widget: "string" }
+          - { label: "Contenido Principal", name: "body", widget: "markdown" }
       - label: "Fútbol"
         name: "futbol"
         file: "futbol.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
           - { label: "Descripción", name: "description", widget: "string" }
+          - { label: "Contenido Principal", name: "body", widget: "markdown" }
       - label: "Básquetbol"
         name: "basquetbol"
         file: "basquetbol.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
           - { label: "Descripción", name: "description", widget: "string" }
+          - { label: "Contenido Principal", name: "body", widget: "markdown" }
       - label: "MLS"
         name: "soccer"
         file: "soccer.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
           - { label: "Descripción", name: "description", widget: "string" }
+          - { label: "Contenido Principal", name: "body", widget: "markdown" }
       - label: "Béisbol"
         name: "beisbol"
         file: "beisbol.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
           - { label: "Descripción", name: "description", widget: "string" }
+          - { label: "Contenido Principal", name: "body", widget: "markdown" }
       - label: "NFL"
         name: "futbolamericano"
         file: "futbolamericano.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
           - { label: "Descripción", name: "description", widget: "string" }
+          - { label: "Contenido Principal", name: "body", widget: "markdown" }
       - label: "Otros Deportes"
         name: "otrosdeportes"
         file: "otrosdeportes.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
           - { label: "Descripción", name: "description", widget: "string" }
+          - { label: "Contenido Principal", name: "body", widget: "markdown" }
       - label: "Opinión"
         name: "opinion"
         file: "opinion.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
           - { label: "Descripción", name: "description", widget: "string" }
+          - { label: "Contenido Principal", name: "body", widget: "markdown" }
       - label: "Contacto"
         name: "contacto"
         file: "contacto.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
           - { label: "Descripción", name: "description", widget: "string" }
+          - { label: "Contenido Principal", name: "body", widget: "markdown" }
      
 
       # ... Añade una entrada para cada una de tus páginas (beisbol.html, contacto.html, etc.)
